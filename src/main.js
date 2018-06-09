@@ -4,8 +4,17 @@ import App from "./App";
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-new Vue({
-  el: "#app",
-  components: { App },
-  template: "<App/>"
+Vue.use(Quasar, {
+  components: All,
+  directives: All,
+  plugins: All
 });
+
+// instance config
+const app = {
+  el: "#app",
+  router: Router,
+  store: Store,
+  ...App
+};
+new Vue(app);
