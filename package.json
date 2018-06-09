@@ -1,6 +1,8 @@
 {
   "name": "quasar-play",
   "version": "0.16.0",
+    "main": "src/main.js",
+
   "description": "Quasar Play for Quasar Framework",
   "productName": "Quasar Play",
   "cordovaId": "com.quasarframework.quasarplay",
